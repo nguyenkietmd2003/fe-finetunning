@@ -1,0 +1,17 @@
+.demo-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.demo-page h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.demo-page p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+} 

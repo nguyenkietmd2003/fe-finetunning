@@ -1,0 +1,92 @@
+.training-log-container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.training-log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.training-log-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.log-stats {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.training-log-content {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.log-entry {
+  padding: 4px 0;
+}
+
+.log-line {
+  color: #666;
+}
+
+.log-step {
+  display: flex;
+  gap: 20px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+.step-number {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.step-loss {
+  color: #f44336;
+}
+
+.step-lr {
+  color: #4caf50;
+}
+
+.log-section-title {
+  font-weight: bold;
+  color: #333;
+  margin: 16px 0 8px 0;
+  padding: 8px;
+  background: #e3f2fd;
+  border-radius: 4px;
+}
+
+.log-result {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+.result-key {
+  color: #666;
+}
+
+.result-value {
+  color: #2196f3;
+  font-weight: bold;
+} 
