@@ -4,8 +4,9 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
   padding: 20px;
-  max-height: 600px;
+  max-height: 500px;
   overflow-y: auto;
+  border: 1px solid #e0e0e0;
 }
 
 .training-log-header {
@@ -15,6 +16,10 @@
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
 }
 
 .training-log-header h2 {
@@ -26,12 +31,16 @@
 .log-stats {
   color: #666;
   font-size: 0.9rem;
+  background: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 4px;
 }
 
 .training-log-content {
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.9rem;
   line-height: 1.5;
+  padding: 10px 0;
 }
 
 .log-entry {
@@ -40,53 +49,85 @@
 
 .log-line {
   color: #666;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.log-line:hover {
+  background: #f5f5f5;
 }
 
 .log-step {
   display: flex;
   gap: 20px;
-  padding: 8px;
+  padding: 8px 12px;
   background: #f8f9fa;
   border-radius: 4px;
   margin: 4px 0;
+  border-left: 4px solid #2196f3;
 }
 
 .step-number {
   color: #2196f3;
   font-weight: bold;
+  min-width: 80px;
 }
 
 .step-loss {
   color: #f44336;
+  min-width: 120px;
 }
 
 .step-lr {
   color: #4caf50;
+  min-width: 120px;
 }
 
 .log-section-title {
   font-weight: bold;
   color: #333;
   margin: 16px 0 8px 0;
-  padding: 8px;
+  padding: 12px;
   background: #e3f2fd;
   border-radius: 4px;
+  border-left: 4px solid #2196f3;
 }
 
 .log-result {
   display: flex;
   justify-content: space-between;
-  padding: 8px;
+  padding: 8px 12px;
   background: #f5f5f5;
   border-radius: 4px;
   margin: 4px 0;
+  border-left: 4px solid #4caf50;
 }
 
 .result-key {
   color: #666;
+  font-weight: 500;
 }
 
 .result-value {
   color: #2196f3;
   font-weight: bold;
+}
+
+/* Custom scrollbar */
+.training-log-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.training-log-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.training-log-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.training-log-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 } 

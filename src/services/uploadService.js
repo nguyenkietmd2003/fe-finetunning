@@ -95,3 +95,14 @@ export const getLog = async () => {
     throw err;
   }
 }
+
+export const clearLog = async () => {
+  const URL_API = `http://localhost:5000/clear-logs`;
+  try {
+    const res = await instance.delete(URL_API);
+    return res;
+  } catch (err) {
+    console.error("Failed to fetch log:", err);
+    throw err;
+  }
+}

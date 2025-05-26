@@ -10,7 +10,7 @@ const Demo3 = () => {
       sender: 'bot'
     }
   ]);
-  const [inputMessage, setInputMessage] = useState('');
+  const [inputMessage, setInputMessage] =   useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
@@ -47,7 +47,7 @@ const Demo3 = () => {
     } catch (error) {
       const errorMessage = {
         id: messages.length + 2,
-        text: 'Xin lỗi, đã có lỗi xảy ra khi xử lý câu hỏi của bạn.',
+        text: 'Xin lỗi, thông tin tìm kiếm không có trong cơ sở dữ liệu.',
         sender: 'bot'
       };
       setMessages(prev => [...prev, errorMessage]);
